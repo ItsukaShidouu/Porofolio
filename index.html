@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Nama Anda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-primary">PORTFOLIO.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="hover:text-primary px-3 py-2 transition-colors">Beranda</a>
+                        <a href="#about" class="hover:text-primary px-3 py-2 transition-colors">Tentang</a>
+                        <a href="#skills" class="hover:text-primary px-3 py-2 transition-colors">Keahlian</a>
+                        <a href="#projects" class="hover:text-primary px-3 py-2 transition-colors">Proyek</a>
+                        <a href="#experience" class="hover:text-primary px-3 py-2 transition-colors">Pengalaman</a>
+                        <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="block hover:text-primary px-3 py-2 transition-colors">Beranda</a>
+                <a href="#about" class="block hover:text-primary px-3 py-2 transition-colors">Tentang</a>
+                <a href="#skills" class="block hover:text-primary px-3 py-2 transition-colors">Keahlian</a>
+                <a href="#projects" class="block hover:text-primary px-3 py-2 transition-colors">Proyek</a>
+                <a href="#experience" class="block hover:text-primary px-3 py-2 transition-colors">Pengalaman</a>
+                <a href="#contact" class="block bg-primary text-white px-4 py-2 rounded-lg mx-auto w-fit mt-2">Hubungi Saya</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16 bg-gradient-to-br from-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-primary font-semibold tracking-wide uppercase mb-2">Halo, Saya</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-secondary mb-4">Nama Anda</h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">Full-Stack Developer & UI/UX Designer yang berfokus pada pengalaman pengguna yang luar biasa.</p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-primary text-white rounded-full font-bold hover:shadow-lg transition-all transform hover:-translate-y-1">Lihat Proyek</a>
+                    <a href="#contact" class="px-8 py-3 border-2 border-primary text-primary rounded-full font-bold hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-primary rounded-3xl rotate-6 opacity-20"></div>
+                    <div class="absolute inset-0 bg-secondary rounded-3xl -rotate-6 opacity-10"></div>
+                    <img src="https://via.placeholder.com/400x400" alt="Profile" class="relative z-10 w-full h-full object-cover rounded-3xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Tentang Saya</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Saya adalah seorang pengembang perangkat lunak yang berdedikasi dengan pengalaman dalam membangun aplikasi web modern. Saya mencintai tantangan teknis dan selalu berusaha mempelajari teknologi terbaru.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Visi saya adalah menciptakan solusi digital yang tidak hanya berfungsi dengan baik, tetapi juga memberikan pengalaman yang menyenangkan bagi pengguna.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <span class="font-bold block">Nama:</span>
+                            <span class="text-gray-600">Nama Lengkap</span>
+                        </div>
+                        <div>
+                            <span class="font-bold block">Email:</span>
+                            <span class="text-gray-600">email@contoh.com</span>
+                        </div>
+                        <div>
+                            <span class="font-bold block">Lokasi:</span>
+                            <span class="text-gray-600">Jakarta, Indonesia</span>
+                        </div>
+                        <div>
+                            <span class="font-bold block">Pekerjaan:</span>
+                            <span class="text-gray-600">Freelance / Fulltime</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-6">
+                    <div class="p-6 bg-blue-50 rounded-2xl text-center">
+                        <span class="text-4xl font-bold text-primary block mb-2">3+</span>
+                        <span class="text-gray-600">Tahun Pengalaman</span>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-2xl text-center">
+                        <span class="text-4xl font-bold text-primary block mb-2">20+</span>
+                        <span class="text-gray-600">Proyek Selesai</span>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-2xl text-center">
+                        <span class="text-4xl font-bold text-primary block mb-2">15+</span>
+                        <span class="text-gray-600">Klien Puas</span>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-2xl text-center">
+                        <span class="text-4xl font-bold text-primary block mb-2">5+</span>
+                        <span class="text-gray-600">Sertifikasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Keahlian Saya</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                    <h3 class="font-bold">HTML5</h3>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold">CSS3</h3>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fab fa-js text-5xl text-yellow-400 mb-4"></i>
+                    <h3 class="font-bold">JavaScript</h3>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fab fa-react text-5xl text-cyan-400 mb-4"></i>
+                    <h3 class="font-bold">React</h3>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fab fa-node-js text-5xl text-green-500 mb-4"></i>
+                    <h3 class="font-bold">Node.js</h3>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fab fa-git-alt text-5xl text-orange-600 mb-4"></i>
+                    <h3 class="font-bold">Git</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Proyek Terbaru</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="relative overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">Toko online lengkap dengan fitur pembayaran dan manajemen inventaris.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">Node.js</span>
+                        </div>
+                        <a href="#" class="text-primary font-bold inline-flex items-center hover:underline">
+                            Lihat Detail <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="relative overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">Aplikasi untuk membantu produktivitas tim dengan fitur kolaborasi real-time.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">Vue</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">Firebase</span>
+                        </div>
+                        <a href="#" class="text-primary font-bold inline-flex items-center hover:underline">
+                            Lihat Detail <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                    <div class="relative overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Health & Fitness Web</h3>
+                        <p class="text-gray-600 mb-4">Dashboard untuk melacak aktivitas kebugaran dan pola makan harian.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">Tailwind</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-primary font-bold inline-flex items-center hover:underline">
+                            Lihat Detail <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Pengalaman Kerja</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-8">
+                    <div class="relative pl-8 border-l-2 border-primary">
+                        <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+                        <span class="text-sm font-bold text-primary mb-1 block">Jan 2022 - Sekarang</span>
+                        <h3 class="text-xl font-bold">Senior Web Developer</h3>
+                        <p class="text-gray-500 mb-2">Tech Solutions Inc.</p>
+                        <p class="text-gray-600">Memimpin tim frontend dalam mengembangkan arsitektur aplikasi web skala besar menggunakan React dan TypeScript.</p>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-primary">
+                        <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+                        <span class="text-sm font-bold text-primary mb-1 block">Mar 2020 - Des 2021</span>
+                        <h3 class="text-xl font-bold">Web Developer</h3>
+                        <p class="text-gray-500 mb-2">Creative Agency</p>
+                        <p class="text-gray-600">Membangun situs web responsif dan kustom untuk berbagai klien dari industri yang berbeda.</p>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-primary">
+                        <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+                        <span class="text-sm font-bold text-primary mb-1 block">Jun 2018 - Feb 2020</span>
+                        <h3 class="text-xl font-bold">Junior Developer</h3>
+                        <p class="text-gray-500 mb-2">Startup Lokal</p>
+                        <p class="text-gray-600">Bekerja pada perbaikan bug, pemeliharaan situs, dan menambahkan fitur-fitur baru pada platform internal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Hubungi Saya</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Mari Berkolaborasi!</h3>
+                    <p class="text-gray-600 mb-8">Punya proyek menarik atau sekadar ingin menyapa? Jangan ragu untuk menghubungi saya melalui formulir ini atau media sosial saya.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full text-primary">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-600">email@contoh.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full text-primary">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Telepon</h4>
+                                <p class="text-gray-600">+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full text-primary">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Lokasi</h4>
+                                <p class="text-gray-600">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold mb-2">Nama</label>
+                                <input type="text" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-primary" placeholder="Nama Lengkap">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-primary" placeholder="Email Anda">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">Subjek</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-primary" placeholder="Subjek Pesan">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">Pesan</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-primary" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-primary text-white font-bold rounded-lg hover:bg-blue-600 transition-colors">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-6">PORTFOLIO.</h2>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="text-gray-400">&copy; 2024 Nama Anda. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple form submission handler
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Terima kasih! Pesan Anda telah terkirim (ini adalah simulasi).');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
